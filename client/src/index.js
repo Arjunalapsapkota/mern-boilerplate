@@ -1,12 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./app";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "index.scss";
 let Helloworld = () => {
-  return (
-    <button className="btn-primary w-25 m-3 p-2 rounded text-center">
-      sign in
-    </button>
-  );
+  return <App></App>;
 };
 ReactDOM.render(<Helloworld />, document.getElementById("root"));
