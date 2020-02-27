@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd client && npm test"
+  },
+  "engines": {
+    "node": ">=8.0.0 <11.0.0"
   },
   "keywords": [],
   "author": "",
