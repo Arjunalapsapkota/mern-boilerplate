@@ -1,6 +1,6 @@
-import path from "path";
+const path = require("path");
 
-import HtmlWebpackPlugin from "html-webpack-plugin";
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
@@ -39,7 +39,9 @@ module.exports = {
         test: /\.(js|jsx)$/,
         // we do not want anything from node_modules to be compiled
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        use: {
+          loader: "babel-loader"
+        }
       },
       {
         test: /\.(css|scss)$/,

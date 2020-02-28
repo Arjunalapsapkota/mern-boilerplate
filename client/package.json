@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Complete MERN stack boiler plate , No configuration needed. Configured with Jest, redux, es-lint and prettier. Just ` npm install ` and start writing code. !! ",
   "scripts": {
-    "build": "babel-node ./node_modules/webpack/bin/webpack",
-    "start": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server --open",
+    "build": "webpack",
+    "start": "webpack-dev-server --open",
     "test": "jest"
   },
   "proxy": "http://localhost:8000/",
