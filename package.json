@@ -10,7 +10,7 @@
     "client": "cd client && npm start",
     "test": "cd client && npm run-script test && cd .. && jest || true --exit",
     "install": "cd client && npm install",
-    "heroku-prebuild": "npm install --dev",
+    "heroku-prebuild": "cd client && npm install --dev",
     "build": "cd client && npm run build",
     "coverage": "npm run test --collectcoverage"
   },
