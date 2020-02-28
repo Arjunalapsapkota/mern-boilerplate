@@ -10,7 +10,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cd client && npm install && npm run-script test && cd .. && jest"
+    "test": "cd client && npm run-script test && cd .. && jest",
+    "install": "cd client && npm install"
   },
   "engines": {
     "node": ">=8.0.0 <11.0.0"
