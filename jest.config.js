@@ -1,6 +1,6 @@
 module.exports = {
   collectCoverage: true,
-  coverageDirectory: "coverage",
+  coverageDirectory: "server_coverage",
   verbose: true,
   transform: {
     "^.+\\.[t|j]sx?$": "babel-jest"

@@ -12,6 +12,7 @@ module.exports = {
   resolve: { modules: [path.resolve(__dirname, "src"), "node_modules"] },
   devServer: {
     contentBase: path.join(__dirname, "src"),
+    hot: true,
     stats: {
       colors: true,
       hash: false,
@@ -27,7 +28,8 @@ module.exports = {
       errorDetails: false,
       warnings: true,
       publicPath: false
-    }
+    },
+    port: 3000
   },
   module: {
     rules: [
