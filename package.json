@@ -22,20 +22,20 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "4.2.0",
-    "concurrently": "5.1.0",
     "eslint": "6.1.0",
     "eslint-config-airbnb": "18.0.1",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.18.3",
     "eslint-plugin-react-hooks": "1.7.0",
-    "if-env": "1.0.4",
     "jest": "25.1.0",
     "mocha": "7.1.0",
     "nodemon": "2.0.2",
     "prettier": "1.19.1"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "if-env": "1.0.4",
+    "concurrently": "5.1.0"
   }
 }
