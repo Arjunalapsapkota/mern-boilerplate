@@ -6,8 +6,7 @@
   "scripts": {
     "webpack": "babel-node ./node_modules/webpack/bin/webpack",
     "start": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server --open",
-    "test": "jest",
-    "install": "cd client && npm install"
+    "test": "jest"
   },
   "author": "arjun sapkota",
   "license": "MIT",
