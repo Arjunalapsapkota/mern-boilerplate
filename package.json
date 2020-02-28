@@ -9,7 +9,7 @@
     "start_dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm start",
     "test": "cd client && npm run-script test && cd .. && jest || true --exit",
-    "install": "npm install && cd client && npm install",
+    "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "coverage": "npm run test --collectcoverage"
   },
