@@ -15,7 +15,8 @@
     "start_dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm start",
     "test": "cd client && npm run-script test && cd .. && jest || true --exit",
-    "install": "cd client && npm install"
+    "install": "cd client && npm install",
+    "build": "cd client && npm run webpack"
   },
   "engines": {
     "node": ">=8.0.0 <11.0.0"
@@ -37,5 +38,6 @@
     "mocha": "7.1.0",
     "nodemon": "2.0.2",
     "prettier": "1.19.1"
-  }
+  },
+  "dependencies": {}
 }

@@ -11,7 +11,23 @@ module.exports = {
   mode: process.env.NODE_ENV || "development",
   resolve: { modules: [path.resolve(__dirname, "src"), "node_modules"] },
   devServer: {
-    contentBase: path.join(__dirname, "src")
+    contentBase: path.join(__dirname, "src"),
+    stats: {
+      colors: true,
+      hash: false,
+      version: false,
+      timings: false,
+      assets: false,
+      chunks: false,
+      modules: false,
+      reasons: false,
+      children: false,
+      source: false,
+      errors: false,
+      errorDetails: false,
+      warnings: true,
+      publicPath: false
+    }
   },
   module: {
     rules: [
