@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha && cd client && jest || true --exit "
+    "test": "mocha && cd client && npm test || true --exit "
   },
   "engines": {
     "node": ">=8.0.0 <11.0.0"
