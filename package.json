@@ -1,10 +1,16 @@
 {
   "name": "mern-boilerplate",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/client/"
+    ]
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha && cd client && npm test || true --exit "
+    "test": "cd client && npm run-script test && cd .. && jest"
   },
   "engines": {
     "node": ">=8.0.0 <11.0.0"
