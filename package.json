@@ -10,7 +10,8 @@
     "client": "cd client && npm start",
     "test": "cd client && npm run-script test && cd .. && jest || true --exit",
     "install": "cd client && npm install",
-    "build": "cd client && npm run webpack"
+    "build": "cd client && npm run webpack",
+    "coverage": "npm run test --collectcoverage"
   },
   "engines": {
     "node": ">=8.0.0 <11.0.0"
