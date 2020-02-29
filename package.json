@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start_prod || npm run start_dev",
-    "start_prod": "node server/index.js",
+    "start_prod": "node server/server.js",
     "start_dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm start",
     "test": "cd client && npm run-script test && cd .. && jest || true --exit",
