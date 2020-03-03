@@ -18,7 +18,7 @@ RUN mkdir -p ~/client
 COPY client/package*.json ./client/
 
 #install all the dependencies
-RUN npm install 
+RUN npm install --unsafe-perm
 
 #RUN cd client && npm install
 #build 
