@@ -1,0 +1,7 @@
+node_modules
+build
+server_coverage
+coverage
+client/coverage/lcov-report
+package-lock.json
+./package-lock.json

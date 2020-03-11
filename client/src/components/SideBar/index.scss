@@ -1,0 +1,120 @@
+// css variables
+
+$sidebar_font: rgb(185, 182, 182);
+$sidebar_background_color: rgb(28, 34, 51);
+
+@mixin menufont {
+  font-weight: 300;
+  font-size: 1.3em;
+  color: $sidebar_font;
+  text-decoration: none;
+  padding: 1em;
+  letter-spacing: 2px;
+}
+@mixin hoverhand {
+  cursor: pointer;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 5em;
+  background-color: $sidebar_background_color;
+}
+.sidebar-icon {
+  position: absolute;
+  @include hoverhand();
+  right: 1.25em;
+  top: 1em;
+  width: 40px;
+  height: 22px;
+  transition: width 0.2s ease-in-out;
+  div {
+    background-color: rgb(114, 111, 111);
+  }
+  .first-line {
+    position: relative;
+    width: 100%;
+    height: 4px;
+  }
+  .second-line {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .third-line {
+    position: relative;
+    width: 100%;
+    height: 4px;
+  }
+}
+
+.open {
+  width: 20em;
+}
+.fiopen {
+  top: 0.7em;
+  transform: rotate(-45deg);
+  transition: transform 0.5s ease-in-out;
+}
+.siopen {
+  display: none;
+}
+.tiopen {
+  top: 0.5em;
+  transform: rotate(45deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.listDiv {
+  position: relative;
+  list-style-type: none;
+  height: 3.75em;
+}
+.menu {
+  position: relative;
+  top: 5em;
+}
+.menu .listDiv {
+  @include menufont();
+  @include hoverhand();
+  padding-bottom: 0.2em;
+}
+.menu .listDiv:hover {
+  background-color: rgb(83, 81, 81);
+  padding-left: 30px;
+  .icon-holder {
+    transform: scale(1.5);
+  }
+}
+.inline {
+  display: inline;
+}
+
+.fa-database {
+  color: red;
+}
+.fa-home {
+  color: green;
+}
+.fa-users {
+  color: rgb(67, 67, 199);
+}
+
+.fa-chart-pie {
+  color: rgb(235, 235, 130);
+}
+.drawer-open {
+  position: relative;
+  left: 2em;
+  transition: left 0.1s;
+}
+.drawer-close {
+  position: absolute;
+  left: -15em;
+}
+.icon-holder {
+  position: absolute;
+}

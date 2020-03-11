@@ -1,0 +1,139 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 5em;
+  background-color: #1c2233;
+}
+
+.sidebar-icon {
+  position: absolute;
+  cursor: pointer;
+  right: 1.25em;
+  top: 1em;
+  width: 40px;
+  height: 22px;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+
+.sidebar-icon div {
+  background-color: #726f6f;
+}
+
+.sidebar-icon .first-line {
+  position: relative;
+  width: 100%;
+  height: 4px;
+}
+
+.sidebar-icon .second-line {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sidebar-icon .third-line {
+  position: relative;
+  width: 100%;
+  height: 4px;
+}
+
+.open {
+  width: 20em;
+}
+
+.fiopen {
+  top: 0.7em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.siopen {
+  display: none;
+}
+
+.tiopen {
+  top: 0.5em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.listDiv {
+  position: relative;
+  list-style-type: none;
+  height: 3.75em;
+}
+
+.menu {
+  position: relative;
+  top: 5em;
+}
+
+.menu .listDiv {
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #b9b6b6;
+  text-decoration: none;
+  padding: 1em;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding-bottom: 0.2em;
+}
+
+.menu .listDiv:hover {
+  background-color: #535151;
+  padding-left: 30px;
+}
+
+.menu .listDiv:hover .icon-holder {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.inline {
+  display: inline;
+}
+
+.fa-database {
+  color: red;
+}
+
+.fa-home {
+  color: green;
+}
+
+.fa-users {
+  color: #4343c7;
+}
+
+.fa-chart-pie {
+  color: #ebeb82;
+}
+
+.drawer-open {
+  position: relative;
+  left: 2em;
+  -webkit-transition: left 0.1s;
+  transition: left 0.1s;
+}
+
+.drawer-close {
+  position: absolute;
+  left: -15em;
+}
+
+.icon-holder {
+  position: absolute;
+}
+/*# sourceMappingURL=index.css.map */

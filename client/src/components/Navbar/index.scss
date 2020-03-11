@@ -1,0 +1,52 @@
+@import "../SideBar/index.scss";
+.Navbar {
+  position: fixed;
+  display: flex;
+  left: 5em;
+  width: 100%;
+  height: 3.5em;
+  background-color: rgb(204, 224, 226);
+  .logo {
+    position: absolute;
+    align-self: center;
+    right: 6em;
+    width: 10em;
+    height: auto;
+  }
+  .account {
+    @include hoverhand();
+    background-color: rgb(61, 72, 77);
+    position: absolute;
+    left: 1em;
+    width: 8.25em;
+    height: 60%;
+    align-self: center;
+    display: flex;
+    border-radius: 30px;
+    .profile {
+      position: absolute;
+      width: 2em;
+      margin-left: 0.35em;
+      height: 2em;
+      border-radius: 100%;
+      background-color: cornflowerblue;
+      align-self: center;
+    }
+    .manage {
+      position: relative;
+      left: 1em;
+      color: white;
+      letter-spacing: 1px;
+      align-self: center;
+    }
+
+    .fa-cogs {
+      color: grey;
+    }
+
+    .icon {
+      display: inline;
+      margin-left: 1em;
+    }
+  }
+}

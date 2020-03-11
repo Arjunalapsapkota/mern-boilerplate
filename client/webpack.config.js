@@ -24,8 +24,8 @@ module.exports = {
       reasons: false,
       children: false,
       source: false,
-      errors: false,
-      errorDetails: false,
+      errors: true,
+      errorDetails: true,
       warnings: true,
       publicPath: false
     },
@@ -59,7 +59,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html")
+      template: path.join(__dirname, "public", "index.html")
     })
   ]
 };
